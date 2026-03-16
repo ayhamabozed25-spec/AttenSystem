@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance System</title>
+</head>
+<body>
+  <h2>تسجيل الموظف</h2>
+  <input id="empId" placeholder="رقم الموظف">
+  <input id="name" placeholder="اسم الموظف">
+  <video id="video" width="260" autoplay></video>
+  <button id="captureBtn" style="display:none;" onclick="captureFace()">التقاط بصمة الوجه</button>
+  <p id="result">جاري تحميل النماذج...</p>
+
+  <!-- مكتبة face-api محلية -->
+  <script src="./face-api.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
