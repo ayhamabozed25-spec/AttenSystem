@@ -17,7 +17,7 @@ async function loadModels() {
 
   try {
     await faceapi.nets.tinyFaceDetector.loadFromUri("./facemodels/");
-    await faceapi.nets.faceLandmark68Net.loadFromUri("./facemodels/");
+    await faceapi.nets.faceLandmark68TinyNet.loadFromUri("./facemodels/");
     await faceapi.nets.faceRecognitionNet.loadFromUri("./facemodels/");
 
     captureBtn.style.display = "inline";
